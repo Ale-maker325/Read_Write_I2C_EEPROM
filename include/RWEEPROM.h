@@ -14,14 +14,16 @@ class My_EEPROM {
         {
             deviceAddr = Addr;
         };
-        
+
+        ~My_EEPROM() = default;
+
         //Чтение одного байта из ЕЕПРОМ
         byte read_1BYTE_EEPROM_256(uint16_t EEPROM_Addr);
         //Запись одного байта в ЕЕПРОМ
         byte write_1BYTE_EEPROM_256(uint16_t EEPROM_Addr, byte DATA);
-        //Запись байтов в виде страницы (странично) в ЕЕПРОМ
+        //Запись байтов в виде страницы в ЕЕПРОМ
         void writeBites_24c32(uint16_t EEPROM_Addr, byte *BUFFER, uint16_t lengthBUFFER);
-        //Чтение байтов в виде страницы (постранично) из ЕЕПРОМ
+        //Чтение байтов в виде страницы из ЕЕПРОМ
         void readBites_24c32(uint16_t EEPROM_Addr, byte *BUFFER, uint16_t lengthBUFFER);
         
         
