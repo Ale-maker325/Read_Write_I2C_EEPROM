@@ -116,7 +116,7 @@ class My_EEPROM {
          * @return uint16_t -  возвращаемый результат: количество считанных байт
          */
         template <class T>
-        uint16_t readPage(uint16_t ADDR, const T & value)
+        uint16_t readPage(uint16_t ADDR, T & value)
         {
             //создаём временный массив байтов размером value, куда будем считывать данные
             byte in[sizeof(value)];

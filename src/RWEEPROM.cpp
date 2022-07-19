@@ -4,10 +4,16 @@
 
 //Размер страницы ЕЕПРОМ 24С32 согласно даташита
 #define EEPROM__PAGE_SIZE         32
+
 //Буфер чтения BUFFER_LENGTH, определенный в библиотеке Wire (32 байта)
-#define EEPROM__RD_BUFFER_SIZE    BUFFER_LENGTH
-//БуБуфер записи, определенный в библиотеке Wire (30 байта - 2 байта на адрес)
-#define EEPROM__WR_BUFFER_SIZE    (BUFFER_LENGTH - 2)
+//#define EEPROM__RD_BUFFER_SIZE    BUFFER_LENGTH
+
+//Буфер чтения BUFFER_LENGTH, определенный в библиотеке Wire (128 байт)
+#define EEPROM__RD_BUFFER_SIZE    I2C_BUFFER_LENGTH
+
+
+//БуБуфер записи, определенный в библиотеке Wire ( -2 байта на адрес)
+#define EEPROM__WR_BUFFER_SIZE    (I2C_BUFFER_LENGTH - 2)
 
 
 
