@@ -1,7 +1,7 @@
 /**
  * 
  * @file main.cpp
- * @author Alexander (deed30511@gmail.com)
+ * @author Ale-maker325 (Ale-maker325 (https://github.com/Ale-maker325/Read_Write_EEPROM))
  * @brief Библиотека для записи и чтения I2C ЕЕПРОМ (FRAM, 24C256, 24C512 ... и др.). 
  * 
  * Можно записывать и считывать один байт по указанному адресу, можно записывать и считывать любой объект
